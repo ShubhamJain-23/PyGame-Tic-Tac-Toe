@@ -54,26 +54,6 @@ def draw_lines(rows, height, width):
         width_column += width / rows
     pass
 
-# def is_winning_move(player):
-#     if player == 1:
-#         winning_colour = BLUE
-#     else:
-#         winning_colour = RED
-#     for row in range(ROWS):
-#         if board[row][0] == board[row][1] == board[row][2] == player:
-#             pygame.draw.line(window, winning_colour, (0, (row + 1) * WIDTH / ROWS), (WIDTH, (row + 1) * WIDTH / ROWS), 7)
-#             return True
-#     for col in range(COLUMNS):
-#         if board[0][col] == board[1][col] == board[2][col] == player:
-#             pygame.draw.line(window, winning_colour, ((col + 1) * WIDTH / COLUMNS, 0), ((col + 1) * WIDTH / COLUMNS, HEIGHT), 7)
-#             return True
-#     if board[0][0] == board[1][1] == board[2][2] == player:
-#         pygame.draw.line(window, winning_colour, (0+10, 0+10), (WIDTH - 10, HEIGHT - 10), 7)
-#         return True
-#     if board[2][0] == board[1][1] == board[0][2] == player:
-#         pygame.draw.line(window, winning_colour, (HEIGHT - 10, 10), (10, WIDTH - 10), 7)
-#         return True
-
 def is_winning_move(player):
     if player == 1:
         winning_colour = BLUE
